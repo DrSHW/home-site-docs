@@ -53,6 +53,7 @@ export const SIDEBAR: Sidebar = {
 	main: {
 		'使用指南': [
 			{ text: '欢迎光临DrSHW的书架!', link: 'main/introduction' },
+			{ text: '隐私政策', link: 'main/policy' },
 		],
 	},
 	pb: {
@@ -71,8 +72,6 @@ export const SIDEBAR: Sidebar = {
 			{ text: '字符编码', link: 'pb/primary/11' },
 			{ text: '文件操作', link: 'pb/primary/12' },
 			{ text: '异常', link: 'pb/primary/13' },
-			{ text: '番外——Python中的类型标注', link: 'pb/primary/extra_1' },
-			{ text: '番外——内存管理与垃圾回收', link: 'pb/primary/extra_2' },
 		],
 		'Python语法进阶': [
 			{ text: '面向对象基础', link: 'pb/senior/1' },

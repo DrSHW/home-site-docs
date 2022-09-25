@@ -5,13 +5,22 @@ type Props = {
 ---
 
 <footer>
-	<div></div>,
+	<div class="footer">
+		<div><a href="https://index.drshw.tech">回到主页</a></div>
+		<div><a href="https://github.com/DrSHW">Github</a></div>
+		<div><a href="https://docs.drshw.tech/main/policy">隐私政策</a></div>
+	</div>
 </footer>
 
 <style>
 	footer {
 		margin-top: auto;
 		padding: 2rem;
+		justify-content: center;
 		border-top: 3px solid var(--theme-divider);
+	}
+	.footer {
+		display: flex;
+		justify-content: space-around;
 	}
 </style>
