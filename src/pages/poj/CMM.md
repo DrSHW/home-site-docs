@@ -9,7 +9,7 @@ layout: ../../layouts/MainLayout.astro
 
 # CMM 简介
 
-CMM 是一个简化的可自举的C语言编译器（建设中），借鉴了著名的C4项目，它的设计思路和配置如下：
+CMM 是一个简化的可自举的C语言编译器（建设中 ），借鉴了著名的C4项目，它的设计思路和配置如下：
 
 ## 设计编译器的传统步骤
 
@@ -17,9 +17,9 @@ CMM 是一个简化的可自举的C语言编译器（建设中），借鉴了著
 
 ### 前端
 
-在前端，需要词法分析器（scanner）和语法分析器（parser）来将源代码转变为生成语法树(**AST**)或过渡代码**IR(LLVM)**：
+在前端，需要词法分析器（scanner ）和语法分析器（parser ）来将源代码转变为生成语法树(**AST**)或过渡代码**IR(LLVM)**：
 
-1. 词法分析：将可读的代码转变为可被计算机识别的`token`（这一过程也被称为`tokenlize`）；
+1. 词法分析：将可读的代码转变为可被计算机识别的`token`（这一过程也被称为`tokenlize` ）；
 
 2. 语法分析：将一些语句转换为生成语法树(**AST**)或过渡代码**IR(LLVM)**；
 
@@ -35,11 +35,11 @@ CMM 是一个简化的可自举的C语言编译器（建设中），借鉴了著
 
 后端也被分为了两部分：
 
-1. 优化器（**optimizer**）：是编译器设计过程中最复杂的部分。在这个部分，中间语言（intermediate code）将进行优化以提升性能。
+1. 优化器（**optimizer** ）：是编译器设计过程中最复杂的部分。在这个部分，中间语言（intermediate code ）将进行优化以提升性能。
 
-2. 代码生成器（Code generator）：将中间代码转换为目标代码。
+2. 代码生成器（Code generator ）：将中间代码转换为目标代码。
 
-著名的`LLVM`可以帮助我们完成整个后端的操作（兼容全平台）。
+著名的`LLVM`可以帮助我们完成整个后端的操作（兼容全平台 ）。
 
 ## CMM 的设计思路
 
@@ -57,23 +57,23 @@ CMM 是一个简化的可自举的C语言编译器（建设中），借鉴了著
 
 计算基于寄存器`Register`和方法栈`Stack`；
 
-寄存器选用（仅一个通用寄存器）：
+寄存器选用（仅一个通用寄存器 ）：
 
-+ PC（Program Counter）：程序计数器，
-+ SP（Stack Pointer）：堆栈寄存器，存放栈的偏移地址，
-+ BP（Base Pointer）：基数指针寄存器，用于SP的校准，
++ PC（Program Counter ）：程序计数器，
++ SP（Stack Pointer ）：堆栈寄存器，存放栈的偏移地址，
++ BP（Base Pointer ）：基数指针寄存器，用于SP的校准，
 + AX：通用寄存器；
 
 内存空间分为三块：
 
-+ 代码区（Code）：存放编译好的VM指令，
-+ 数据区（Data）：存放数据，
-+ 方法栈（Stack）：进行函数和循环等一些复杂操作时进行优化；
++ 代码区（Code ）：存放编译好的VM指令，
++ 数据区（Data ）：存放数据，
++ 方法栈（Stack ）：进行函数和循环等一些复杂操作时进行优化；
 
 指令集分为四种：
 
-+ 存取指令集（save & load），
-+ 运算指令集（operation），
++ 存取指令集（save & load ），
++ 运算指令集（operation ），
 + 分支跳转指令集，
 + `Native-call`：用于动态分配内存。
 
@@ -135,8 +135,8 @@ else if (op == MOD)     ax = *sp++ %  ax;
 | 指令   | 解释                                                         |
 | ------ | ------------------------------------------------------------ |
 | `JUMP` | 跳转至值所对地址                                             |
-| `JZ`   | 传入`AX`，若`AX == 0`，则跳转（JUMP）                        |
-| `JNZ`  | 传入`AX`，若`AX != 0`，则跳转（JUMP）                        |
+| `JZ`   | 传入`AX`，若`AX == 0`，则跳转（JUMP ）                        |
+| `JNZ`  | 传入`AX`，若`AX != 0`，则跳转（JUMP ）                        |
 | `CALL` | 跳转至函数所在地址                                           |
 | `NVAR` | New Stack Frame for Vars，在栈中给函数的变量添加新的内存空间 |
 | `DARG` | Delete Stack Frame for Args，销毁栈指针后的所有元素          |
@@ -152,7 +152,7 @@ else if (op == JNZ)     pc = ax ? (int*)*pc : pc + 1;   // jump if ax != 0
 // 一些在函数调用中常用到的复杂操作的说明
 // call function: 将 pc + 1 压入栈顶 & pc 跳转至函数所在地址
 else if (op == CALL)    {*--sp = (int)(pc+1); pc = (int*)*pc;}
-// new stack frame for vars: 存储 bp 副本（用于找到原先位置）, bp 指向调用函数的地址, 栈中给函数的变量添加新的内存空间
+// new stack frame for vars: 存储 bp 副本（用于找到原先位置 ）, bp 指向调用函数的地址, 栈中给函数的变量添加新的内存空间
 else if (op == NVAR)    {*--sp = (int)bp; bp = sp; sp = sp - *pc++;}
 // delete stack frame for args: 与 x86 的设计一样，DARG N -> 销毁栈中前 N 个元素
 else if (op == DARG)    sp = sp + *pc++;
