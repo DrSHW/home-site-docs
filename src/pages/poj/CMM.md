@@ -144,7 +144,7 @@ else if (op == MOD)     ax = *sp++ %  ax;
 
 对应代码：
 
-```C
+```c
 // 跳转指令
 else if (op == JMP)     pc = (int*)*pc;                 // jump
 else if (op == JZ)      pc = ax ? pc + 1 : (int*)*pc;   // jump if ax == 0

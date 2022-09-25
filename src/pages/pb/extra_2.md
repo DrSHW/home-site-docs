@@ -1,6 +1,6 @@
 ---
 description: Docs intro
-layout: ../../../layouts/MainLayout.astro
+layout: ../../layouts/MainLayout.astro
 ---
 
 # 垃圾回收与内存管理
@@ -66,7 +66,7 @@ typedef struct {		// 在四个固定的值上又加了一个数据个数，用�
 
 + `float`类型
 
-```C
+```c
 typedef struct {
     PyObject_HEAD       // 引宏定义
     double ob_fval;     // 简单地存了一个C语言中的长浮点数
@@ -86,7 +86,7 @@ typedef struct _longobject PyLongObject;
 
 + `list`类型
 
-```C
+```c
 typedef struct {
     PyObject_VAR_HEAD       // 引宏定义
     /* 由Python语言特性，list中存储的不可变类型本质上都是引用，故存具体元素的*地址* */
@@ -97,7 +97,7 @@ typedef struct {
 
 + `tuple` 类型
 
-```C
+```c
 typedef struct {
     PyObject_VAR_HEAD       // 引宏定义
     PyObject *ob_item[1];   // 存放元素
@@ -106,7 +106,7 @@ typedef struct {
 
 + `dict `类型
 
-```C
+```c
 typedef struct {
     PyObject_HEAD       // 引宏定义
     Py_ssize_t ma_used; // 预分配内存
@@ -125,7 +125,7 @@ pi = 3.14
 
 则会按照 `PyFloatObject` 结构体创建数据，如下：
 
-```C
+```c
 struct PyFloatObject{
 	struct _object *ob_next;                \
     struct _object *ob_prev;

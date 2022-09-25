@@ -1,6 +1,6 @@
 ---
 description: Docs intro
-layout: ../../../layouts/MainLayout.astro
+layout: ../../layouts/MainLayout.astro
 ---
 
 # 类型标注
@@ -118,7 +118,7 @@ d = 5
 
 比如`d`能赋值成`int`，也可能被赋值成`float`， 这种情况，要结合`Optional` 和` Union`。
 
-```python3
+```python
 from typing import Optional, Union
 
 a: int = 8
@@ -206,7 +206,7 @@ l: List[int] = [1, 2, 3]
 
 但我们都清楚，列表里存储的数据往往都是类型不相同的，比如下面的列表：
 
-```text
+```
 [1, 2, 3, 'a', 'b', True]
 ```
 
@@ -501,7 +501,7 @@ def test_3() ->ValuesView:
 
 同样地，也是导入`typing`模块中的`Sequence`：
 
-```python3
+```python
 from typing import Sequence, List
 
 
