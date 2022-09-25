@@ -142,7 +142,7 @@ export const SIDEBAR: Sidebar = {
 		'一些小项目': [
 			{ text: 'CMM Compiler(建设中)', link: 'poj/CMM' },
 			{ text: 'PC小程序解密逆向工具', link: 'poj/PC_miniprogram_decrypter' },
-			{ text: '加入麦趣魔法师协会', link: 'poj/join_us' },
+			{ text: '加入麦趣魔法师协会', link: 'poj/introduction' },
 		]
 	},
 };
