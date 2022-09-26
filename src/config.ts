@@ -30,11 +30,10 @@ export const KNOWN_LANGUAGES = {
 	Python语法基础: 'pb',
 	Python网络编程: 'pw',
 	Python科学计算: 'ps',
-	一些小项目及简介: 'poj',
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
-export const GITHUB_EDIT_URL = `https://github.com/DrSHW/home-site-docs`;
+export const GITHUB_EDIT_URL = `https://github.com/DrSHW/home-site-docs/tree/master`;
 
 export const COMMUNITY_INVITE_URL = `https://github.com/maiqu-magicians`;
 
@@ -55,6 +54,10 @@ export const SIDEBAR: Sidebar = {
 			{ text: '欢迎光临DrSHW的书架!', link: 'main/introduction' },
 			{ text: '隐私政策', link: 'main/policy' },
 		],
+		'一些小项目': [
+			{ text: 'CMM Compiler(建设中)', link: 'poj/CMM' },
+			{ text: 'PC小程序解密逆向工具', link: 'poj/PC_miniprogram_decrypter' },
+		]
 	},
 	pb: {
 		'Python语法基础': [
@@ -137,12 +140,5 @@ export const SIDEBAR: Sidebar = {
 			{ text: '机器学习简介', link: 'ps/introduction' },
 			{ text: '线性回归介绍与单变量线性回归模型', link: 'ps/machine_learning/01' },
 		]
-	},
-	poj: {
-		'一些小项目': [
-			{ text: 'CMM Compiler(建设中)', link: 'poj/CMM' },
-			{ text: 'PC小程序解密逆向工具', link: 'poj/PC_miniprogram_decrypter' },
-			{ text: '加入麦趣魔法师协会', link: 'poj/introduction' },
-		]
-	},
+	}
 };

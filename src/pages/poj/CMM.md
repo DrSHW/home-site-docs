@@ -5,7 +5,7 @@ layout: ../../layouts/MainLayout.astro
 
 本项目建设中。。。
 
-项目地址：https://github.com/DrSHW/CMM。
+项目地址：https://github.com/DrSHW/CMM 。
 
 # CMM 简介
 
