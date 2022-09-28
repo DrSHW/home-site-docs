@@ -36,6 +36,11 @@ const lang = getLanguageFromURL(currentPage);
 </header>
 
 <style>
+	@media (min-width: 768px) {
+		.main-logo {
+			height: 6vh;
+		}
+	}
 	header {
 		z-index: 11;
 		height: var(--theme-navbar-height);
@@ -50,7 +55,6 @@ const lang = getLanguageFromURL(currentPage);
 	}
 
 	.main-logo {
-		height: 6vh;
 		margin-right: 1vh;
 		border-radius: 50%;
 	}

@@ -39,9 +39,9 @@ export const COMMUNITY_INVITE_URL = `https://github.com/maiqu-magicians`;
 
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
-	indexName: 'XXXXXXXXXX',
-	appId: 'XXXXXXXXXX',
-	apiKey: 'XXXXXXXXXX',
+	indexName: 'docsearch',
+	appId: 'R2IYF7ETH7',
+	apiKey: '599cec31baffa4868cae4e79f180729b',
 };
 
 export type Sidebar = Record<
@@ -52,6 +52,7 @@ export const SIDEBAR: Sidebar = {
 	main: {
 		'使用指南': [
 			{ text: '欢迎光临DrSHW的书架!', link: 'main/introduction' },
+			{ text: '动态', link: 'main/news' },
 			{ text: '隐私政策', link: 'main/policy' },
 		],
 		'一些小项目': [
@@ -125,6 +126,7 @@ export const SIDEBAR: Sidebar = {
 		],
 		'番外篇': [
 			{ text: '番外——TCP三次握手与四次挥手，你想知道的都在这', link: 'pw/extra_1' },
+			{ text: '番外——Redis的使用', link: 'pw/extra_2' },
 		]
 	},
 	ps: {
