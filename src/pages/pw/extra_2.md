@@ -834,3 +834,83 @@ sr = Redis()
 
 见官方文档：https://redis-py.readthedocs.io/en/latest/#indices-and-tables 。
 
+## 异步操作Redis
+
+在通过Python代码操作Redis时，连接、执行、断开过程都是网络IO，可以采用异步进行优化。
+
+### 准备工作
+
+需要下载一个支持异步Redis的模块——`aioredis`模块，需要指定版本（新版本删去了很多API）：
+
+```bash
+pip install aioredis=1.3.1
+```
+
+这个模块中提供了`Redis`对象，用于连接Redis服务器，并按照不同类型提供了不同方法，进行交互操作。
+
+官方文档：https://aioredis.readthedocs.io/en/latest/ 。
+
+引入方式：
+
+```python
+import aioredis
+```
+
+### 基本使用
+
+连接操作：调用`aioredis`中的`create_redis()`函数，传入地址和密码`password`即可，返回一个可操作Redis的对象；若有多个连接需求，需要创建Redis连接池，通过`create_redis_pool()`即可创建，参数同上。
+
+关闭操作：调用对象的`wait_closed()`方法关闭数据库连接；
+
+其余对数据的操作，与`redis`模块中的操作方式一致，在遇到网络IO耗时操作时，需要用`await`修饰，即可做到不阻塞。
+
+这里给出一个使用示例：
+
+```python
+import asyncio
+import aioredis
+
+async def execute(address, password):
+    print(f'开始执行{address}')
+    # 创建redis连接
+    redis = await aioredis.create_redis(address, password=password)
+    # 在redis中设置哈希值car，内部再设三个键值对，即：redis={car： {key1: 1, key2: 2, key3: 3}}
+    await redis.hmset_dict('car', key1=1, key2=2, key3=3)
+    # 获取redis中car的所有键值对
+    result = await redis.hgetall('car', encoding='utf-8')
+    print(result)
+    # 关闭redis连接
+    redis.close()
+    await redis.wait_closed()
+    print(f'结束执行{address}')
+
+asyncio.run(execute('redis://127.0.0.1', '123456'))
+```
+
+在这个示例中，由于只有一个任务，因此看不出来它快在哪里，可将上方的代码改为多任务形式：
+
+```python
+import asyncio
+import aioredis
+
+async def execute(address, password):
+    # 若有多个连接，需要使用连接池
+    redis = await aioredis.create_redis_pool(address, password=password)
+    # 在redis中设置哈希值car，内部再设三个键值对，即：redis={car： {key1: 1, key2: 2, key3: 3}}
+    await redis.hmset_dict('car', key1=1, key2=2, key3=3)
+    # 获取redis中car的所有键值对
+    result = await redis.hgetall('car', encoding='utf-8')
+    print(result)
+    # 关闭redis连接
+    redis.close()
+    await redis.wait_closed()
+    print(f'结束执行{address}')
+
+task_list = [
+    execute('redis://43.12.56.178:6379', '123456'),
+    execute('redis://43.16.46.128:6379', '123456'),
+]
+asyncio.run(asyncio.wait(task_list))
+```
+
+还有一些Redis连接的操作，这里限于篇幅就不讲解了，可以参阅官方文档。

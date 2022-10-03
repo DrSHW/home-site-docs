@@ -39,9 +39,9 @@ export const COMMUNITY_INVITE_URL = `https://github.com/maiqu-magicians`;
 
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
-	indexName: 'docsearch',
-	appId: 'R2IYF7ETH7',
-	apiKey: '599cec31baffa4868cae4e79f180729b',
+	indexName: 'library',
+	appId: 'AMR2PVRHUM',
+	apiKey: '64d1eb892bfc387bf0c01d7ff16fb240',
 };
 
 export type Sidebar = Record<
@@ -58,6 +58,7 @@ export const SIDEBAR: Sidebar = {
 		'一些小项目': [
 			{ text: 'CMM Compiler(建设中)', link: 'poj/CMM' },
 			{ text: 'PC小程序解密逆向工具', link: 'poj/PC_miniprogram_decrypter' },
+			{ text: '魔塔(Tower of the Sorcerer) 小游戏', link: 'poj/tos' },
 		]
 	},
 	pb: {
@@ -73,7 +74,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: '控制流程', link: 'pb/primary/08' },
 			{ text: '函数初步', link: 'pb/primary/09' },
 			{ text: '函数高级', link: 'pb/primary/10' },
-			{ text: '字符编码', link: 'pb/primary/11' },
+			{ text: '字符编码与内存读写', link: 'pb/primary/11' },
 			{ text: '文件操作', link: 'pb/primary/12' },
 			{ text: '异常', link: 'pb/primary/13' },
 		],
@@ -86,6 +87,8 @@ export const SIDEBAR: Sidebar = {
 			{ text: '多任务——线程', link: 'pb/senior/6' },
 			{ text: '多任务——进程', link: 'pb/senior/7' },
 			{ text: '多任务——协程', link: 'pb/senior/8' },
+			{ text: 'Python 异步编程', link: 'pb/senior/9' },
+			{ text: '池与concurrent模块', link: 'pb/senior/10'}
 		],
 		'番外篇': [
 			{ text: '番外——Python中的类型标注', link: 'pb/extra_1' },
