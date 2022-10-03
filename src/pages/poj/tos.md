@@ -20,16 +20,16 @@ layout: ../../layouts/MainLayout.astro
 * 首先你需要准备VS 2022
 * 其次运行目录下的EasyX_20220610.exe文件，安装时选择安装至Visual C++ 2022，如下图所示：
 
-![image](Source/readme1.png)
+![image](https://images.drshw.tech/images/notes/tos-readme1.png)
 
-即可完成配置
+即可完成配置。
 
 #### 启动方式
 
 * 直接运行Magic_tower.sln文件，即可进入VS 2022
 * 进入项目后，点击本地windows调试器即可
 
-  ![image.png](Source/readme2.png)
+  ![image.png](https://images.drshw.tech/images/notes/tos-readme2.png)
 
 #### 游戏方式
 
