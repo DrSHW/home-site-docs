@@ -5,6 +5,11 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--10.4更新：
+
++ 图片bug修复；
++ 完善了[基于线程、进程与异步的爬虫提速](https://docs.drshw.tech/pw/spider/07/)中的案例讲解。
+
 --10.3 更新：
 
 + *新文章——语法篇[**Python异步编程**](https://docs.drshw.tech/pb/senior/9/)、[池和`concurrent`](https://docs.drshw.tech/pb/senior/10/)；
