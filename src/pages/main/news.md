@@ -8,7 +8,8 @@ layout: ../../layouts/MainLayout.astro
 --10.4更新：
 
 + 图片bug修复；
-+ 完善了[基于线程、进程与异步的爬虫提速](https://docs.drshw.tech/pw/spider/07/)中的案例讲解。
++ 完善了[基于线程、进程与异步的爬虫提速](https://docs.drshw.tech/pw/spider/07/)中的案例讲解；
++ 新章节——操作系统篇。
 
 --10.3 更新：
 

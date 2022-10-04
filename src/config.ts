@@ -30,6 +30,7 @@ export const KNOWN_LANGUAGES = {
 	Python语法基础: 'pb',
 	Python网络编程: 'pw',
 	Python科学计算: 'ps',
+	操作系统: 'os',
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
@@ -144,6 +145,11 @@ export const SIDEBAR: Sidebar = {
 		'Python机器学习': [
 			{ text: '机器学习简介', link: 'ps/introduction' },
 			{ text: '线性回归介绍与单变量线性回归模型', link: 'ps/machine_learning/01' },
+		]
+	},
+	os: {
+		'第一章 操作系统概述': [
+			{ text: '1.1 操作系统的概念，功能和目标', link: 'os/introduction' },
 		]
 	}
 };
