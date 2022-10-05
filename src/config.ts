@@ -150,6 +150,11 @@ export const SIDEBAR: Sidebar = {
 	os: {
 		'第一章 操作系统概述': [
 			{ text: '1.1 操作系统的概念，功能和目标', link: 'os/introduction' },
+			{ text: '1.2 操作系统的特征', link: 'os/1/2' },
+			{ text: '1.3 操作系统的发展和分类', link: 'os/1/3' },
+			{ text: '1.4 操作系统运行机制和体系结构', link: 'os/1/4' },
+			{ text: '1.5 中断和异常', link: 'os/1/5' },
+			{ text: '1.6 系统调用', link: 'os/1/6' },
 		]
 	}
 };
