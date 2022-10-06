@@ -5,7 +5,7 @@ layout: ../../layouts/MainLayout.astro
 
 # PC小程序解密/逆向工具
 
-项目地址：https://raw.githubusercontent.com/DrSHW/pcWxappDecrypter-Unpacker/master/README.md。
+项目地址：https://raw.githubusercontent.com/DrSHW/pcWxappDecrypter-Unpacker/master/README.md 。
 
 ### PC小程序解密
 
