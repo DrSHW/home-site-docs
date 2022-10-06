@@ -155,6 +155,9 @@ export const SIDEBAR: Sidebar = {
 			{ text: '1.4 操作系统运行机制和体系结构', link: 'os/1/4' },
 			{ text: '1.5 中断和异常', link: 'os/1/5' },
 			{ text: '1.6 系统调用', link: 'os/1/6' },
+		],
+		'第二章 进程管理': [
+			{ text: '2.1 进程的描述与控制', link: 'os/2/1' },
 		]
 	}
 };
