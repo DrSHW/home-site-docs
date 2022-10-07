@@ -32,6 +32,7 @@ export const KNOWN_LANGUAGES = {
   Python网络编程: "pw",
   Python科学计算: "ps",
   操作系统: "os",
+  编译原理: "cp",
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
@@ -171,4 +172,7 @@ export const SIDEBAR: Sidebar = {
       { text: "2.2 进程同步", link: "os/2/2" },
     ],
   },
+  cp: {
+    
+  }
 };
