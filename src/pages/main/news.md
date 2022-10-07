@@ -5,6 +5,12 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--10.7更新：
+
++ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新至2.2.3；
++ 新章节——编译原理篇；
++ 邀请了 [特菈 Dustella](https://dustella.net/) 加入文档的写作，他现在不仅仅喜欢睡大觉了！
+
 --10.4更新：
 
 + 图片bug修复；
