@@ -5,6 +5,10 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--10.8更新：
+
++ 更新了一点操作系统，嗯。
+
 --10.7更新：
 
 + [操作系统篇](https://docs.drshw.tech/os/introduction/)更新至2.2.3；

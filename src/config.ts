@@ -159,7 +159,7 @@ export const SIDEBAR: Sidebar = {
     ],
   },
   os: {
-    "第一章 操作系统概述": [
+    "第一章 操作系统引论": [
       { text: "1.1 操作系统的概念，功能和目标", link: "os/introduction" },
       { text: "1.2 操作系统的特征", link: "os/1/2" },
       { text: "1.3 操作系统的发展和分类", link: "os/1/3" },
@@ -167,9 +167,14 @@ export const SIDEBAR: Sidebar = {
       { text: "1.5 中断和异常", link: "os/1/5" },
       { text: "1.6 系统调用", link: "os/1/6" },
     ],
-    "第二章 进程管理": [
-      { text: "2.1 进程的描述与控制", link: "os/2/1" },
-      { text: "2.2 进程同步", link: "os/2/2" },
+    "第二章 进程的描述与控制": [
+      { text: "2.1 进程的基本概念", link: "os/2/1" },
+      { text: "2.2 进程控制", link: "os/2/2" },
+      { text: "2.3 进程同步", link: "os/2/3" },
+      { text: "2.4 经典的进程同步问题", link: "os/2/4" },
+      { text: "2.5 管程", link: "os/2/5" },
+      { text: "2.6 进程通信", link: "os/2/6" },
+      { text: "2.7  线程", link: "os/2/7" },
     ],
   },
   cp: {
