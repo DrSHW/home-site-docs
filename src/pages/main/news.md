@@ -7,7 +7,7 @@ layout: ../../layouts/MainLayout.astro
 
 --10.8更新：
 
-+ 更新了一点操作系统，嗯。
++ 更新了一点[操作系统篇](https://docs.drshw.tech/os/introduction/)的内容，嗯。
 
 --10.7更新：
 

@@ -178,6 +178,8 @@ export const SIDEBAR: Sidebar = {
     ],
   },
   cp: {
-    
+    "第一章 绪论": [
+      { text: "1.1 什么是编译", link: "cp/introduction" },
+    ]
   }
 };
