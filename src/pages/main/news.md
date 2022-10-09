@@ -4,6 +4,9 @@ layout: ../../layouts/MainLayout.astro
 ---
 
 ### 更新日志
+--10.9更新：
+
++ [操作系统篇](https://docs.drshw.tech/os/introduction/)第二章的内容更新完毕。
 
 --10.8更新：
 
