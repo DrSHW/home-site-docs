@@ -166,6 +166,7 @@ export const SIDEBAR: Sidebar = {
       { text: "1.4 操作系统运行机制和体系结构", link: "os/1/4" },
       { text: "1.5 中断和异常", link: "os/1/5" },
       { text: "1.6 系统调用", link: "os/1/6" },
+      { text: "本章疑难点", link: "os/1/final" },
     ],
     "第二章 进程的描述与控制": [
       { text: "2.1 进程的基本概念", link: "os/2/1" },
@@ -174,7 +175,8 @@ export const SIDEBAR: Sidebar = {
       { text: "2.4 经典的进程同步问题", link: "os/2/4" },
       { text: "2.5 管程", link: "os/2/5" },
       { text: "2.6 进程通信", link: "os/2/6" },
-      { text: "2.7  线程", link: "os/2/7" },
+      { text: "2.7 线程", link: "os/2/7" },
+      { text: "本章疑难点", link: "os/2/final" },
     ],
   },
   cp: {
