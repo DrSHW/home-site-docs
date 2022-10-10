@@ -175,12 +175,12 @@ var1.ob_fval = 3.14;
 
 ```python
 name = 'alex'	# 创建对象并初始化引用计数器为1
-a = name		# 计数器发生变化
+a = name	# 计数器发生变化
 b = name
 c = b
 e = a
 
-db = "老男孩"		# 创建对象并初始化引用计数器为1
+db = "老男孩"	# 创建对象并初始化引用计数器为1
 ```
 
 执行后，`refchain`链表状态如下：
@@ -284,7 +284,7 @@ v3 = 9	# 9已创建，内部不开辟内存，直接在池中获取
 
 ```python
 v1 = 3.14	# 开辟内存，创建结构体，加入refchain
-del v1 		# refchain中移除，将对象添加至free_list中(假设未超出长度上限)
+del v1 	# refchain中移除，将对象添加至free_list中(假设未超出长度上限)
 v9 = 66.99	# 不会重新开辟内存，而是去free_list中获取类型一样的对象，并将对象内部数据初始化，并加入refchain
 ```
 
@@ -295,7 +295,7 @@ v9 = 66.99	# 不会重新开辟内存，而是去free_list中获取类型一样�
   ```python
   v1 = 3.14    	# 开辟内存来存储float对象，并将对象添加到refchain链表。
   print(id(v1)) 	
-  del v1    		# 引用计数器-1，如果为0则在rechain链表中移除，不销毁对象，而是将对象添加到float的free_list.
+  del v1    	# 引用计数器-1，如果为0则在rechain链表中移除，不销毁对象，而是将对象添加到float的free_list.
   v2 = 9.999    	# 优先去free_list中获取对象，并重置为9.999，如果free_list为空才重新开辟内存。
   print(id(v2)) 	
   ```
@@ -306,9 +306,9 @@ v9 = 66.99	# 不会重新开辟内存，而是去free_list中获取类型一样�
 - `int`类型，不是基于`free_list`，而是维护一个`small_ints`链表保存常见数据（小数据池 ），小数据池范围：`-5 <= value < 257`。即：重复使用这个范围的整数时，不会重新开辟内存。
 
   ```python
-  v1 = 38    		# 去小数据池small_ints中获取38整数对象，将对象添加到refchain并让引用计数器+1。  
+  v1 = 38    	# 去小数据池small_ints中获取38整数对象，将对象添加到refchain并让引用计数器+1。  
   print(id(v1))  	 
-  v2 = 38 		# 去小数据池small_ints中获取38整数对象，将refchain中的对象的引用计数器+1。  
+  v2 = 38 	# 去小数据池small_ints中获取38整数对象，将refchain中的对象的引用计数器+1。  
   print(id(v2))
   ```
 

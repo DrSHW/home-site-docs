@@ -98,12 +98,12 @@ Found 1 error in 1 file (checked 1 source file)
 在`typing`模块中，我们可以引入`Option`关键字，代表<u>可选的</u>，使用格式为`Option[可用类型名]`，修改代码如下：
 
 ```python
-from typing import Optional		# 导入模块
+from typing import Optional	# 导入模块
 
 a: int = 8
 b: bool = True
 c: str = 'ok'
-d: Optional[int] = None			# 暂时为None，后续可改为int
+d: Optional[int] = None	# 暂时为None，后续可改为int
 e: float = 9.8
 f: bytes = b'32'
 
@@ -142,7 +142,7 @@ d = None
 ```python
 from typing import Optional, Union
 
-a: Union[int, float] = 8    			# 不要这样做
+a: Union[int, float] = 8    	# 不要这样做
 b: bool = True
 c: str = 'ok'
 d: Optional[Union[int, float]] = None
@@ -167,9 +167,9 @@ a = 8.9
 ```python
 from typing import Any
 
-a: Any = 8    						# 不要这样做
+a: Any = 8    	# 不要这样做
 
-a = 'OK'							# 可以改为任何类型，并通过类型检查
+a = 'OK'	# 可以改为任何类型，并通过类型检查
 a = []
 ```
 
@@ -445,7 +445,7 @@ class Demo():
 d: Demo = Demo()
 
 print(d.count)
-d.count = 20  			# mypy 检查会报错
+d.count = 20  	# mypy 检查会报错
 ```
 
 ### 4. 不常见的类型标注

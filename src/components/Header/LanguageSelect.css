@@ -37,6 +37,8 @@
 	position: absolute;
 	top: 7px;
 	left: 10px;
+	height: 1.2rem;
+	width: 1.2rem;
 	pointer-events: none;
 }
 
