@@ -1,3 +1,8 @@
+---
+description: Docs intro
+layout: ../../../layouts/MainLayout.astro
+---
+
 ## 本章疑难点
 
 ### 什么是微内核操作系统？微内核操作系统有哪些优点，为什么？
