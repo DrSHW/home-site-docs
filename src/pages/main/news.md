@@ -4,6 +4,11 @@ layout: ../../layouts/MainLayout.astro
 ---
 
 ### 更新日志
+--10.10更新：
+
++ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了Berstein条件，以及本章疑难点栏目，存放一些简答题；
++ [编译原理篇](https://docs.drshw.tech/cp/introduction/)更新了第一章的内容（By Dustella）。
+
 --10.9更新：
 
 + [操作系统篇](https://docs.drshw.tech/os/introduction/)第二章的内容更新完毕。
