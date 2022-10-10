@@ -181,7 +181,7 @@ export const SIDEBAR: Sidebar = {
     "第一章 引论": [
       { text: "1.1编译器的逻辑结构", link: "cp/1/1" },
       { text: "1.2编译程序的任务", link: "cp/1/2" },
-      { text: "1.3编译程序的生成", link: "cp/1/3" },
+      { text: "1.3程序设计语言基础", link: "cp/1/3" },
     ],
     "第二章 文法及语言": [
       { text: "2.1程序语言的定义", link: "cp/2/1" },
