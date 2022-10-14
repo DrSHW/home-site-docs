@@ -181,9 +181,8 @@ export const SIDEBAR: Sidebar = {
     "第三章 处理机调度与死锁": [
       { text: "3.1 处理机调度的基本概念", link: "os/3/1" },
       { text: "3.2 调度算法", link: "os/3/2" },
-      { text: "3.3 实时调度", link: "os/3/3" },
-      { text: "3.4 死锁的基本概念 ", link: "os/3/4" },
-      { text: "3.5 处理死锁的基本方法", link: "os/3/5" },
+      { text: "3.3 死锁的基本概念 ", link: "os/3/3" },
+      { text: "3.4 处理死锁的基本方法", link: "os/3/4" },
       { text: "本章疑难点", link: "os/3/final" },
     ],
   },
