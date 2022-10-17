@@ -7,7 +7,8 @@ layout: ../../layouts/MainLayout.astro
 
 --10.17更新：
 
-+ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[4.1](https://docs.drshw.tech/os/4/1/)。
++ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[4.1](https://docs.drshw.tech/os/4/1/)；
++ 新栏目预告——[**Python服务框架**](https://docs.drshw.tech/sf/introduction)。旨在介绍主流Python框架（Django、Flask）的使用与Golang分布式的搭建。
 
 --10.16更新：
 
@@ -41,7 +42,7 @@ layout: ../../layouts/MainLayout.astro
 --10.7更新：
 
 + [操作系统篇](https://docs.drshw.tech/os/introduction/)更新至2.2.3；
-+ 新章节——编译原理篇；
++ 新栏目——编译原理篇；
 + 邀请了 [特菈 Dustella](https://dustella.net/) 加入文档的写作，他现在不仅仅喜欢睡大觉了！
 
 --10.4更新：

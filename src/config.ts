@@ -30,6 +30,7 @@ export const KNOWN_LANGUAGES = {
   分类: "main",
   Python语法基础: "pb",
   Python网络编程: "pw",
+  Python服务框架: "sf",
   Python科学计算: "ps",
   操作系统: "os",
   编译原理: "cp",
@@ -140,6 +141,11 @@ export const SIDEBAR: Sidebar = {
       },
       { text: "番外——Redis的使用", link: "pw/extra_2" },
     ],
+  },
+  sf: {
+    Django基础: [
+      { text: "说在前面", link: "sf/introduction" },
+    ]
   },
   ps: {
     Python数据分析: [

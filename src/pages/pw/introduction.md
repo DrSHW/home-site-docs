@@ -7,7 +7,13 @@ layout: ../../layouts/MainLayout.astro
 
 ### 前缀知识
 
-**Python语法基础**、**Python语法进阶**和一点点**计算机网络**的知识。
+[**Python基本语法**](https://docs.drshw.tech/pb/introduction/)和一点点**计算机网络**的知识。
+
+### 栏目介绍
+
+在本栏目中，我们将介绍Python爬虫技术、JS逆向以及主流爬虫框架（`scarpy`、`feapder`）的运用。
+
+更新完毕，番外随缘。
 
 ### 本教程使用的开发环境
 
