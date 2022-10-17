@@ -7,7 +7,7 @@ layout: ../../layouts/MainLayout.astro
 
 --10.17更新：
 
-+ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[4.1](https://docs.drshw.tech/os/4/1/)。
++ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了第四、五章的结构与[4.1](https://docs.drshw.tech/os/4/1/)。
 
 --10.16更新：
 
