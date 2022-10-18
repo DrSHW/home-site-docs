@@ -66,6 +66,7 @@ cobegin
 + 互斥关系：对取号操作需要互斥地进行；
 
 + 同步关系（一前一后）：
+
   1. 当存在空座位时，顾客才能取号；
   2. 仅当所有座位不空时，营业员才能开始服务；
   3. 营业员叫号后，顾客才能获取服务；
@@ -76,7 +77,7 @@ cobegin
 // 信号量设置
 semaphore mutex=1;  //互斥使用取号机
 semaphore empty=10; //空座位的数量，设置为10
-semaphore full=0;   //已占作为的数量，初值为0
+semaphore full=0;   //已占座位的数量，初值为0
 semaphore service=0;    //等待叫号
 // 进程操作
 cobegin 
