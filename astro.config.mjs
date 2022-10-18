@@ -26,5 +26,5 @@ export default defineConfig({
 			wrap: true,
 		  },
 	},
-	site: `http://docs.drshw.tech/`,
+	site: `https://docs.drshw.tech/`,
 });
