@@ -56,7 +56,7 @@ export default function Search() {
 					/>
 				</svg>
 
-				<span>Search</span>
+				<span>搜索</span>
 
 				<span className="search-hint">
 					<span className="sr-only">Press </span>
