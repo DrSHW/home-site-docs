@@ -26,5 +26,5 @@ export default defineConfig({
 			wrap: true,
 		  },
 	},
-	site: `http://astro.build`,
+	site: `http://docs.drshw.tech/`,
 });
