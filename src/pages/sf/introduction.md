@@ -7,7 +7,11 @@ layout: ../../layouts/MainLayout.astro
 
 ### 前缀知识
 
-+ 需要熟悉[**Python基本语法**](https://docs.drshw.tech/pb/introduction/)和一点点**服务器运维**的知识，熟悉数据库[MySQL](https://docs.drshw.tech/pw/spider/06/#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%98%E5%82%A8)的[Redis](https://docs.drshw.tech/pw/extra_2/)的概念和使用。
++ [**Python基本语法**](https://docs.drshw.tech/pb/introduction/)
++ 一点点**服务器运维**的知识；
++ [**Python网络编程**](https://docs.drshw.tech/pw/introduction/)中关于请求和响应的相关知识；
++ 熟悉数据库[MySQL](https://docs.drshw.tech/pw/spider/06/#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%98%E5%82%A8)的[Redis](https://docs.drshw.tech/pw/extra_2/)的概念和使用；
++ 前端的知识，三板斧与`Vue`框架。
 
 ### 栏目介绍
 

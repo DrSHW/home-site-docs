@@ -43,9 +43,9 @@ export const COMMUNITY_INVITE_URL = `https://github.com/maiqu-magicians`;
 
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
-  indexName: "library",
-  appId: "AMR2PVRHUM",
-  apiKey: "64d1eb892bfc387bf0c01d7ff16fb240",
+  indexName: "drshw",
+  appId: "IYKF2PMF44",
+  apiKey: "e9d34a5f4c277b87a5b040d6961e3d30",
 };
 
 export type Sidebar = Record<
