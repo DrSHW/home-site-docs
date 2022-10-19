@@ -61,8 +61,6 @@ echo alias python=python3 >> ~/.bashrc
 
 source ~/.bashrc
 
-pip install django==2.2.6	# 下载django2.2.6版本
-
 ctrl p + ctrl q # 挂起容器
 ```
 
@@ -88,7 +86,7 @@ sudo pip install virtualenvwrapper
 > source /usr/local/bin/virtualenvwrapper.sh
 > 
 > # 3、运行
-> source ~/.bashr
+> source ~/.bashrc
 > ```
 
 创建虚拟环境：
@@ -111,9 +109,11 @@ sudo pip install virtualenvwrapper
   # mkvirtualenv -p python3 py3_django
   ```
 
-创建成功后，终端会自动工作在这个虚拟环境上，此时提示符最前面会出现“虚拟环境名称”。
+创建成功后，终端会自动工作在这个虚拟环境上，此时提示符最前面会出现“虚拟环境名称”，例如：
 
-查看虚拟环境的命令：
+![img](https://images.drshw.tech/images/notes/03D138F66975E366CFBA9E89530E91C4.png)
+
+查看/进入虚拟环境的命令：
 
 ```bash
 workon 虚拟环境名称
@@ -148,8 +148,14 @@ rmvirtualenv 虚拟环境名称
 
 ![image-20221018000112066](https://images.drshw.tech/images/notes/image-20221018000112066.png)
 
-填入IP、密码、端口等信息即可：
+填入IP、密码、端口等信息，不断点击下一步：
 
 <img src="https://images.drshw.tech/images/notes/image-20221018000242928.png" alt="image-20221018000242928" style="zoom: 35%;" />
 
-让我们开始吧~
+使用`docker`则选择系统解释器，使用虚拟环境则选择`Virtualenv`环境，解释器选择对应的远程解释器，同步文件夹选择本地需要同步至云上的文件夹即可：
+
+<img src="https://images.drshw.tech/images/notes/image-20221019224425859.png" alt="image-20221019224425859" style="zoom:30%;" />
+
+<img src="https://images.drshw.tech/images/notes/image-20221019225729156.png" alt="image-20221019225729156" style="zoom:30%;" />
+
+点击创建后，配置完毕。
