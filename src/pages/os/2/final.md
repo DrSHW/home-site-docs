@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 
 因为程序是静态的，程序即使只有一次结果不再现，也是错误的。
 
-要使结果再现，符合并发的要求，需要满足[Berstein条件]([https://docs.drshw.tech/os/1/2/#Berstein条件](https://docs.drshw.tech/os/1/2/#bernstein%E6%9D%A1%E4%BB%B6))，但几乎不可能满足所有指令没有交集，所以一般情况下程序不能并发，也不能被调度。
+要使结果再现，符合并发的要求，需要满足[Berstein条件](https://docs.drshw.tech/os/1/2/#bernstein%E6%9D%A1%E4%BB%B6)，但几乎不可能满足所有指令没有交集，所以一般情况下程序不能并发，也不能被调度。
 
 ### 为什么要引入进程？
 
