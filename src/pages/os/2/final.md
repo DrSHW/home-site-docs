@@ -29,7 +29,7 @@ layout: ../../../layouts/MainLayout.astro
 
 ### 原子操作是什么
 
-原子操作执行过程只能一气呵成，中间不允许被中断。一般使用“[关中断指令](https://docs.drshw.tech/os/2/2/#221-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5)”和“开中断指令”这两个[特权指令](https://docs.drshw.tech/os/2/2/#221-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5)实现原子性。
+原子操作执行过程只能一气呵成，中间不允许被中断。一般使用“[关中断指令](https://docs.drshw.tech/os/2/2/#221-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5)”和“开中断指令”这两个[特权指令](https://docs.drshw.tech/os/1/4/#141-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6)实现原子性。
 
 ### 课上习题——复杂生产者消费者
 
