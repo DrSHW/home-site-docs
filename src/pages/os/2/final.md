@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 
 因为程序是静态的，程序即使只有一次结果不再现，也是错误的。
 
-要使结果再现，符合并发的要求，需要满足[Berstein条件](https://docs.drshw.tech/os/1/2/#121-%E5%B9%B6%E5%8F%91)，但几乎不可能满足所有指令没有交集，所以一般情况下程序不能并发，也不能被调度。
+要使结果再现，符合并发的要求，需要满足[Berstein条件]([https://docs.drshw.tech/os/1/2/#Berstein条件](https://docs.drshw.tech/os/1/2/#bernstein%E6%9D%A1%E4%BB%B6))，但几乎不可能满足所有指令没有交集，所以一般情况下程序不能并发，也不能被调度。
 
 ### 为什么要引入进程？
 
@@ -29,7 +29,7 @@ layout: ../../../layouts/MainLayout.astro
 
 ### 原子操作是什么
 
-原子操作执行过程只能一气呵成，中间不允许被中断。一般使用“[关中断指令](https://docs.drshw.tech/os/2/2/#222-%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6%E7%9B%B8%E5%85%B3%E7%9A%84%E5%8E%9F%E8%AF%AD)”和“开中断指令”这两个[特权指令](https://docs.drshw.tech/os/1/4/#141-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6)实现原子性。
+原子操作执行过程只能一气呵成，中间不允许被中断。一般使用“[关中断指令](https://docs.drshw.tech/os/2/2/#221-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5)”和“开中断指令”这两个[特权指令](https://docs.drshw.tech/os/2/2/#221-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5)实现原子性。
 
 ### 课上习题——复杂生产者消费者
 
