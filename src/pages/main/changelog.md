@@ -5,6 +5,10 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--10.19更新：
+
++ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[4.2](https://docs.drshw.tech/os/4/2/)。
+
 --10.18更新：
 
 + **【重要】**完善了网页的全局搜索功能，现在支持搜索关键词，并支持跳转到该关键词处或其子关键词处；
