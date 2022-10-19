@@ -192,7 +192,7 @@ export const SIDEBAR: Sidebar = {
       { text: "本章疑难点", link: "os/3/final/" },
     ],
     "第四章 存储器管理": [
-      { text: "4.1 存储器管理的基本概念", link: "os/4/1//" },
+      { text: "4.1 存储器管理的基本概念", link: "os/4/1/" },
       { text: "4.2 连续分配方式", link: "os/4/2/" },
       { text: "4.3 基本分页存储管理方式", link: "os/4/3/" },
       { text: "4.4 分段式存储管理方式", link: "os/4/4/" },
