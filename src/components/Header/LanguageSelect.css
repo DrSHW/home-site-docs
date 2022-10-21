@@ -21,7 +21,7 @@
 	transition-duration: 0.2s;
 	transition-property: border-color, color;
 	-webkit-font-smoothing: antialiased;
-	padding-left: 30px;
+	padding-left: 1.8rem;
 	padding-right: 1rem;
 }
 .language-select-wrapper .language-select:hover,
