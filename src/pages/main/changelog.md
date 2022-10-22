@@ -5,6 +5,11 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--10.22更新：
+
++ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[4.3](https://docs.drshw.tech/os/4/3/)；
++ [Python服务框架篇](https://docs.drshw.tech/sf/introduction/)更新了[初识Django](https://docs.drshw.tech/sf/1/1/)。
+
 --10.19更新：
 
 + [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[4.2](https://docs.drshw.tech/os/4/2/)。
@@ -17,7 +22,7 @@ layout: ../../layouts/MainLayout.astro
 --10.17更新：
 
 + [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[4.1](https://docs.drshw.tech/os/4/1/)；
-+ 新栏目预告——[**Python服务框架**](https://docs.drshw.tech/sf/introduction)。旨在介绍主流Python框架（Django、Flask）的使用与Golang分布式的搭建。
++ 新栏目预告——[**Python服务框架篇**](https://docs.drshw.tech/sf/introduction)。旨在介绍主流Python框架（Django、Flask）的使用与Golang分布式的搭建。
 
 --10.16更新：
 
