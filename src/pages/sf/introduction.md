@@ -23,8 +23,8 @@ layout: ../../layouts/MainLayout.astro
 
 + 为了便于服务的迁移，服务端项目均在Ubuntu Server中的`docker`容器中运行，其中Python版本为3.9；
 + 当然，也可以使用虚拟环境`venv`直接在服务器中搭建；
-+ 需要安装MySQL和Redis服务（配置就不讲解了）；
-+ 使用PyCharm2022专业版远程连接远程解释器。
++ 需要安装MySQL和Redis服务（部署时用远程数据库，测试时用本地/远程）；
++ 使用PyCharm2022专业版远程连接远程解释器、数据库。
 
 下面给出两种环境搭建的方式：
 
@@ -156,6 +156,35 @@ rmvirtualenv 虚拟环境名称
 
 <img src="https://images.drshw.tech/images/notes/image-20221019224425859.png" alt="image-20221019224425859" style="zoom:30%;" />
 
-<img src="https://images.drshw.tech/images/notes/image-20221019225729156.png" alt="image-20221019225729156" style="zoom:30%;" />
+<img src="https://images.drshw.tech/images/notes/image-20221024220202540.png" alt="image-20221024220202540" style="zoom:30%;" />
 
 点击创建后，配置完毕。
+
+#### 配置远程MySQL
+
+使用`docker`配置即可，依次执行：
+
+```bash
+docker pull mysql
+
+docker run -itd --name [容器名] --net host -p 3306:3306 -e MYSQL_ROOT_PASSWORD=703347 mysql
+```
+
+再使用PyCharm或Navicat连接即可：
+
++ PyCharm连接：
+
+  <img src="https://images.drshw.tech/images/notes/image-20221024203323107.png" alt="image-20221024203323107" style="zoom:35%;" />
+
+  <img src="https://images.drshw.tech/images/notes/image-20221024203617634.png" alt="image-20221024203617634" style="zoom:33%;" />
+
+  填入参数即可。
+
++ Navicat：
+
+  <img src="https://images.drshw.tech/images/notes/image-20221024203419551.png" alt="image-20221024203419551" style="zoom:40%;" />
+
+  <img src="https://images.drshw.tech/images/notes/image-20221024203523078.png" alt="image-20221024203523078" style="zoom:33%;" />
+
+  填入参数即可。
+
