@@ -21,7 +21,7 @@ export default defineConfig({
 			// Add custom languages
 			// Note: Shiki has countless langs built-in, including .astro!
 			// https://github.com/shikijs/shiki/blob/main/docs/languages.md
-			langs: ['c', 'python', 'js', 'asm', 'cpp', 'bash'],
+			langs: ['c', 'python', 'js', 'asm', 'cpp', 'bash', 'sql'],
 			// Enable word wrap to prevent horizontal scrolling
 			wrap: true,
 		  },

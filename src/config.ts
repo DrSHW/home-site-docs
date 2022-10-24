@@ -146,6 +146,7 @@ export const SIDEBAR: Sidebar = {
     Django基础: [
       { text: "说在前面", link: "sf/introduction/" },
       { text: "初识 Django", link: "sf/1/1/" },
+      { text: "Django 流程", link: "sf/1/2/" },
     ]
   },
   ps: {
