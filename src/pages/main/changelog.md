@@ -5,7 +5,12 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
---10.23更新：
+--10.25更新：
+
++ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[5.2](https://docs.drshw.tech/os/5/2/)；
++ [Python服务框架篇](https://docs.drshw.tech/sf/introduction/)更新了[Django 流程](https://docs.drshw.tech/sf/1/2/)。
+
+--10.24更新：
 
 + [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[5.1](https://docs.drshw.tech/os/5/1/)。
 
