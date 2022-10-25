@@ -42,14 +42,13 @@ cobegin
     {
         从取号机获取一个号码;
         等待叫号;
-        获取服务;
     }
     process 营业员
     {
         while (true)
         {
             叫号;
-            为客户服务;
+            提供服务;
         }
     }
 }coend
@@ -78,7 +77,7 @@ cobegin
 semaphore mutex=1;  //互斥使用取号机
 semaphore empty=10; //空座位的数量，设置为10
 semaphore full=0;   //已占座位的数量，初值为0
-semaphore service=0;    //等待叫号
+semaphore service=0;    //等待叫号，初始状态下银行一定是做好准备的，故设为1
 // 进程操作
 cobegin 
 {
@@ -88,9 +87,8 @@ cobegin
         P(mutex);   //申请使用取号机
         从取号机获取一个号码；
         V(mutex);   //取号完毕
-        V(full);    //通知营业员有新顾客
         P(sevice);  //等待营业员叫号
-        获取服务;
+        V(full);    //通知营业员有新顾客
     }
     process 营业员{
         while(true)
@@ -98,7 +96,7 @@ cobegin
             P(full);    //没有顾客则休息
             叫号；
             V(empty);   //顾客离开座位，释放一个空位
-            为客户服务;
+            提供服务;
             V(service); //服务
         }
     }
