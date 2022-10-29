@@ -5,6 +5,11 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--10.29更新：
+
++ [编译原理篇](https://docs.drshw.tech/cp/introduction/)更新了[2.1](https://docs.drshw.tech/cp/2/1/)；
++ 完善了一些内容。
+
 --10.27更新：
 
 + [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[5.4](https://docs.drshw.tech/os/5/4/)。
