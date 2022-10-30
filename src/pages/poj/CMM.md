@@ -5,11 +5,11 @@ layout: ../../layouts/MainLayout.astro
 
 本项目建设中。。。
 
-项目地址：https://github.com/DrSHW/CMM 。
+项目地址：https://github.com/DrSHW/Lemon 。
 
-# CMM 简介
+# Lemon 简介
 
-CMM 是一个简化的可自举的C语言编译器（建设中 ），借鉴了著名的C4项目，它的设计思路和配置如下：
+Lemon 是一个简化的可自举的C语言编译器（建设中 ），借鉴了著名的C4项目，它的设计思路和配置如下：
 
 ## 设计编译器的传统步骤
 
