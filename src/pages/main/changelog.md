@@ -5,6 +5,10 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--11.02更新：
+
++ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[7.1](https://docs.drshw.tech/os/7/1/)。
+
 --11.01更新：
 
 + [Python服务框架篇](https://docs.drshw.tech/sf/introduction/)更新了[Django 模型](https://docs.drshw.tech/sf/1/3/)，包括Django ORM操作的完整示例；
