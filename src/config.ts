@@ -184,14 +184,16 @@ export const SIDEBAR: Sidebar = {
       { text: "2.4 经典的进程同步问题", link: "os/2/4/" },
       { text: "2.5 管程机制", link: "os/2/5/" },
       { text: "2.6 进程通信", link: "os/2/6/" },
-      { text: "2.7 线程", link: "os/2/7/" },
+      { text: "2.7 线程的基本概念与实现", link: "os/2/7/" },
       { text: "本章疑难点", link: "os/2/final/" },
     ],
     "第三章 处理机调度与死锁": [
       { text: "3.1 处理机调度的基本概念", link: "os/3/1/" },
       { text: "3.2 调度算法", link: "os/3/2/" },
       { text: "3.3 死锁的基本概念 ", link: "os/3/3/" },
-      { text: "3.4 处理死锁的基本方法", link: "os/3/4/" },
+      { text: "3.4 预防死锁", link: "os/3/4/" },
+      { text: "3.5 避免死锁", link: "os/3/5/" },
+      { text: "3.6 死锁的检测和解除", link: "os/3/6/" },
       { text: "本章疑难点", link: "os/3/final/" },
     ],
     "第四章 存储器管理": [
