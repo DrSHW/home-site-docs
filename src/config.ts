@@ -60,7 +60,7 @@ export const SIDEBAR: Sidebar = {
       { text: "隐私政策", link: "main/policy/" },
     ],
     一些小项目: [
-      { text: "CMM Compiler(建设中)", link: "poj/CMM/" },
+      { text: "Lemon Compiler(建设中)", link: "poj/CMM/" },
       { text: "PC小程序解密逆向工具", link: "poj/PC_miniprogram_decrypter/" },
       { text: "魔塔(Tower of the Sorcerer) 小游戏", link: "poj/tos/" },
     ],
