@@ -211,6 +211,15 @@ export const SIDEBAR: Sidebar = {
       { text: "5.4 页面分配策略", link: "os/5/4/" },
       { text: "本章疑难点", link: "os/5/final/" },
     ],
+    "第六章 输入输出系统": [
+      { text: "6.1 I/O设备的概念和分类", link: "os/6/1/" },
+      { text: "6.2 I/O控制器", link: "os/6/2/" },
+      { text: "6.3 I/O控制方式", link: "os/6/3/" },
+      { text: "6.4 I/O软件层次结构", link: "os/6/4/" },
+      { text: "6.5 I/O核心子系统", link: "os/6/5/" },
+      { text: "6.6 假脱机技术", link: "os/6/6/" },
+      { text: "本章疑难点", link: "os/6/final/" },
+    ],
     "第七章 文件管理": [
       { text: "7.1 文件和文件系统", link: "os/7/1/" },
       { text: "7.2 文件的逻辑结构", link: "os/7/2/" },
@@ -219,6 +228,14 @@ export const SIDEBAR: Sidebar = {
       { text: "7.5 文件共享", link: "os/7/5/" },
       { text: "7.6 文件保护", link: "os/7/6/" },
       { text: "本章疑难点", link: "os/7/final/" },
+    ],
+    "第八章 磁盘存储器的管理": [
+      { text: "8.1 外存的组织方式", link: "os/8/1/" },
+      { text: "8.2 文件存储空间的管理", link: "os/8/2/" },
+      { text: "8.3 磁盘调度算法", link: "os/8/3/" },
+      { text: "8.4 提高磁盘I/O速度的途径", link: "os/8/4/" },
+      { text: "8.5 磁盘的管理", link: "os/8/5/" },
+      { text: "本章疑难点", link: "os/8/final/" },
     ],
   },
   cp: {
