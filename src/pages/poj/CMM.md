@@ -41,9 +41,9 @@ Lemon 是一个简化的可自举的C语言编译器（建设中 ），借鉴了
 
 著名的`LLVM`可以帮助我们完成整个后端的操作（兼容全平台 ）。
 
-## CMM 的设计思路
+## Lemon的设计思路
 
-`CMM`是一个简化后的C语言编译器，采用：
+`Lemon`是一个简化后的C语言编译器，采用：
 
 + **前后端不分离**的模式，无中间优化；
 + 基于自定义VM的目标代码；
@@ -67,14 +67,14 @@ Lemon 是一个简化的可自举的C语言编译器（建设中 ），借鉴了
 内存空间分为三块：
 
 + 代码区（Code ）：存放编译好的VM指令，
-+ 数据区（Data ）：存放数据，
++ 数据区（Data ）：存放静态数据，
 + 方法栈（Stack ）：进行函数和循环等一些复杂操作时进行优化；
 
 指令集分为四种：
 
 + 存取指令集（save & load ），
 + 运算指令集（operation ），
-+ 分支跳转指令集，
++ 分支跳转指令集， 
 + `Native-call`：用于动态分配内存。
 
 #### 指令集设计
@@ -92,7 +92,7 @@ Lemon 是一个简化的可自举的C语言编译器（建设中 ），借鉴了
 
 ```c
 if (op == IMM)          ax = *pc++;                     // load immediate(or global addr)
-else if (op == LEA)     ax = (int)(bp + *pc++);         // load local addr
+else if (op == LEA)     ax = (int)(bp + *pc++);         // load effective addr
 else if (op == LC)      ax = *(char*)ax;                // load char
 else if (op == LI)      ax = *(int*)ax;                 // load int
 else if (op == SC)      *(char*)*sp++ = ax;             // save char to stack
@@ -102,16 +102,23 @@ else if (op == PUSH)    *--sp = ax;                     // push ax to stack
 
 ##### 运算指令集
 
-| 指令                  | 解释     |
-| --------------------- | -------- |
-| `ADD/SUB/MUL/DIV/MOD` | 算数运算 |
-| `OR/XOR/AND`          | 逻辑运算 |
-| `EQ/NE/LT/LE/GT/GE`   | 比较运算 |
+| 指令                          | 解释     |
+| ----------------------------- | -------- |
+| `ADD/SUB/MUL/DIV/MOD/SHL/SHR` | 算数运算 |
+| `OR/XOR/AND`                  | 逻辑运算 |
+| `EQ/NE/LT/LE/GT/GE`           | 比较运算 |
 
 对应代码：
 
 ```c
 // 运算符，这里就不细讲了
+else if (op == ADD)     ax = *sp++ +  ax;        
+else if (op == SUB)     ax = *sp++ -  ax;
+else if (op == MUL)     ax = *sp++ *  ax;
+else if (op == DIV)     ax = *sp++ /  ax;
+else if (op == MOD)     ax = *sp++ %  ax;
+else if (op == SHL)     ax = *sp++ << ax;
+else if (op == SHR)     ax = *sp++ >> ax;
 else if (op == OR)      ax = *sp++ |  ax;
 else if (op == XOR)     ax = *sp++ ^  ax;
 else if (op == AND)     ax = *sp++ &  ax;
@@ -121,13 +128,6 @@ else if (op == LT)      ax = *sp++ <  ax;
 else if (op == LE)      ax = *sp++ <= ax;
 else if (op == GT)      ax = *sp++ >  ax;
 else if (op == GE)      ax = *sp++ >= ax;
-else if (op == SHL)     ax = *sp++ << ax;
-else if (op == SHR)     ax = *sp++ >> ax;
-else if (op == ADD)     ax = *sp++ +  ax;        
-else if (op == SUB)     ax = *sp++ -  ax;
-else if (op == MUL)     ax = *sp++ *  ax;
-else if (op == DIV)     ax = *sp++ /  ax;
-else if (op == MOD)     ax = *sp++ %  ax;
 ```
 
 ##### 跳转指令集
@@ -152,7 +152,7 @@ else if (op == JNZ)     pc = ax ? (int*)*pc : pc + 1;   // jump if ax != 0
 // 一些在函数调用中常用到的复杂操作的说明
 // call function: 将 pc + 1 压入栈顶 & pc 跳转至函数所在地址
 else if (op == CALL)    {*--sp = (int)(pc+1); pc = (int*)*pc;}
-// new stack frame for vars: 存储 bp 副本（用于找到原先位置 ）, bp 指向调用函数的地址, 栈中给函数的变量添加新的内存空间
+// new stack frame for vars: 存储 bp 副本（用于找到原先位置）, bp 指向调用函数的地址, 栈中给函数的变量添加新的内存空间
 else if (op == NVAR)    {*--sp = (int)bp; bp = sp; sp = sp - *pc++;}
 // delete stack frame for args: 与 x86 的设计一样，DARG N -> 销毁栈中前 N 个元素
 else if (op == DARG)    sp = sp + *pc++;
@@ -165,7 +165,7 @@ else if (op == RET)     {sp = bp; bp = (int*)*sp++; pc = (int*)*sp++;}
 直接搬运C4项目中的`Native-call`，贴代码：
 
 ```c
-// native call，直接搬运 C4 项目中的配置
+// native call，直接搬运 C4  项目中的配置
 else if (op == OPEN)    {ax = open((char*)sp[1], sp[0]);}
 else if (op == CLOS)    {ax = close(*sp);}
 else if (op == READ)    {ax = read(sp[2], (char*)sp[1], *sp);}
@@ -177,6 +177,18 @@ else if (op == MCMP)    {ax = memcmp((char*)sp[2], (char*)sp[1], *sp);}
 else if (op == EXIT)    {printf("exit(%lld)\n", *sp); return *sp;}
 else {printf("ERROR: Unkown Instruction: %lld, cycle: %lld\n", op, cycle); return -1;}
 ```
+
+#### 词法分析
+
+即读入源程序的字符流，输出为有意义的词素，格式为`<token-name, attribute-value>`。
+
+编译过程中，源程序中需要识别的`token-name`可分为四类：
+
++ 关键字`keywords`：例如`if`、`else`、`while`、`char`、`int`、`goto`、`printf`（在Lemon中将`printf`也视为关键字）；
++ 变量/函数`identifiers`；
++ 字面量`literals`：例如`"abcabc"`、`14`等；
++ 运算符`operators`：`+ `、`-`、`*`、`/`、`(`、`)`等；
++ 停用词`stop words`： 例如注释、多余的空格、`\n`、`\t`、`#`（Lemon不支持宏）等等
 
 
 
