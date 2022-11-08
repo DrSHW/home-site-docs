@@ -5,7 +5,11 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
---11.04更新：
+--11.08更新：
+
++ [Python服务框架篇](https://docs.drshw.tech/sf/introduction/)更新了[Django 视图](https://docs.drshw.tech/sf/1/4/)，包括基本的请求与响应方式、状态保持、中间件等内容。
+
+--11.05更新：
 
 + [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[第七章的全部内容](https://docs.drshw.tech/os/7/1/)。
 
