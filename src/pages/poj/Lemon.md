@@ -178,17 +178,63 @@ else if (op == EXIT)    {printf("exit(%lld)\n", *sp); return *sp;}
 else {printf("ERROR: Unkown Instruction: %lld, cycle: %lld\n", op, cycle); return -1;}
 ```
 
-#### 词法分析
+### 预编译过程
+
+即将所有的停用词，如注释（`//`、`/* */`）、宏`#`（Lemon不支持宏）、多余的空格和缩进符全部清除，输出格式化的代码。
+
+### 词法分析
 
 即读入源程序的字符流，输出为有意义的词素，格式为`<token-name, attribute-value>`。
 
 编译过程中，源程序中需要识别的`token-name`可分为四类：
 
-+ 关键字`keywords`：例如`if`、`else`、`while`、`char`、`int`、`goto`、`printf`（在Lemon中将`printf`也视为关键字）；
++ 关键字`keywords`：例如`if`、`else`、`while`、`char`、`int`、`goto`；
 + 变量/函数`identifiers`；
-+ 字面量`literals`：例如`"abcabc"`、`14`等；
++ 常量`literal`：`2`、`"acb"`、`2.5e3`等，分为`intcon`、`charcon`、`strcon`、`floatcon`；
 + 运算符`operators`：`+ `、`-`、`*`、`/`、`(`、`)`等；
-+ 停用词`stop words`： 例如注释、多余的空格、`\n`、`\t`、`#`（Lemon不支持宏）等等
+
+使用**枚举**定义这些基础的`token-name`（更为具体的`token-name`，需要语法分析时判别，如`function`）：
+
+```c
+enum {
+    // 保留字
+    _AUTO = 1, _BREAK, _CASE, _CHAR, _CONST, _CONTINUE, _DEFAULT, _DO, _DOUBLE, _ELSE, _ENUM, _EXTERN,
+    _FLOAT, _FOR, _GOTO, _IF, _INT, _LONG, _REGISTER, _RETURN, _SHORT, _SIGNED, _SIZEOF, _STATIC,
+    _STRUCT, _SWITCH, _TYPEDEF, _UNION, _UNSIGNED, _VOID, _VOLATILE, _WHILE,
+    // 运算符
+    PLUS, MINUS, STAR, DIV, MOD, PLUSPLUS, MINUSMINUS, ASSIGN, PLUSEQUAL, MINUSEQUAL, STAREQUAL,
+    DIVEQUAL, MODEQUAL, EQUAL, NOTEQUAL, GREAT, LESS, GREATEQUAL, LESSEQUAL, ANDAND, OROR, NOT, AND,
+    OR, BITXOR, BITNOT, LEFTMOVE, RIGHTMOVE, QUESTION, COLON, COMMA, SEMICOLON,
+    LPARENT, RPARENT, LBRACKET, RBRACKET, LBRACE, RBRACE, DOUBLEQUOTE, SINGLEQUOTE,
+    // 常量
+    INTCON, FLOATCON, CHARCON, STRCON,
+    // 标识符
+    IDENFR,
+    // 异常
+    _ERROR,
+};
+```
+
+下标需要映射到相对应索引的数组：
+
+```c
+// 定义c语言所有保留字数组，字母从a开始
+static char *key[] = {"auto", "break", "case", "char", "const", "continue", "default", "do", "double",
+                      "else", "enum", "extern", "float", "for", "goto", "if", "int", "long", "register",
+                      "return", "short", "signed", "sizeof", "static", "struct", "switch", "typedef",
+                      "union", "unsigned", "void", "volatile", "while"}; // length = 32
+
+// 定义c语言运算符
+static char *op[] = {"+", "-", "*", "/", "%", "++", "--", "=", "+=", "-=", "*=", "/=", "%=", "==", "!=",
+                     ">", "<", ">=", "<=", "&&", "||", "!", "&", "|", "^", "~", "<<", ">>", "?", ":",
+                     ",", ";", "(", ")", "[", "]", "{", "}", "\"", "\'"}; // length = 42
+```
+
+通过状态机算法，判断对应字符的类型即可完成词法分析。
+
+
+
+
 
 
 
