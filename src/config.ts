@@ -149,6 +149,9 @@ export const SIDEBAR: Sidebar = {
       { text: "Django 流程", link: "sf/1/2/" },
       { text: "Django 模型", link: "sf/1/3/" },
       { text: "Django 视图", link: "sf/1/4/" },
+    ],
+    "项目一 麦趣商城": [
+      { text: "说在前面", link: "sf/2/1/" },
     ]
   },
   ps: {
