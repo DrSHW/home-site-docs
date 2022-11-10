@@ -5,6 +5,10 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--11.10更新：
+
++ [Python服务框架篇](https://docs.drshw.tech/sf/introduction/)新章节：[项目一 麦趣商城](https://docs.drshw.tech/sf/2/1/)，该项目为入门级项目，模式为前后端分离，会讲解搭建的过程。
+
 --11.08更新：
 
 + [Python服务框架篇](https://docs.drshw.tech/sf/introduction/)更新了[Django 视图](https://docs.drshw.tech/sf/1/4/)，包括基本的请求与响应方式、状态保持、中间件等内容。
