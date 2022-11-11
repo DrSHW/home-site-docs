@@ -5,6 +5,10 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--11.11更新：
+
++ 图片bug修复；
+
 --11.10更新：
 
 + [Python服务框架篇](https://docs.drshw.tech/sf/introduction/)新章节：[项目一 麦趣商城](https://docs.drshw.tech/sf/2/1/)，该项目为入门级项目，模式为前后端分离，会讲解搭建的过程。
