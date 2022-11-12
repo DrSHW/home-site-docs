@@ -219,8 +219,9 @@ export const SIDEBAR: Sidebar = {
       { text: "6.2 I/O控制器", link: "os/6/2/" },
       { text: "6.3 I/O控制方式", link: "os/6/3/" },
       { text: "6.4 I/O软件层次结构", link: "os/6/4/" },
-      { text: "6.5 I/O核心子系统", link: "os/6/5/" },
-      { text: "6.6 假脱机技术", link: "os/6/6/" },
+      { text: "6.5 假脱机技术", link: "os/6/5/" },
+      { text: "6.6 设备的分类与回收", link: "os/6/6/" },
+      { text: "6.7 缓冲区管理", link: "os/6/7/" },
       { text: "本章疑难点", link: "os/6/final/" },
     ],
     "第七章 文件管理": [
