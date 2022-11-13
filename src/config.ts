@@ -237,7 +237,7 @@ export const SIDEBAR: Sidebar = {
       { text: "8.1 外存的组织方式", link: "os/8/1/" },
       { text: "8.2 文件存储空间的管理", link: "os/8/2/" },
       { text: "8.3 磁盘调度算法", link: "os/8/3/" },
-      { text: "8.4 提高磁盘I/O速度的途径", link: "os/8/4/" },
+      { text: "8.4 减少磁盘延迟时间的方法", link: "os/8/4/" },
       { text: "8.5 磁盘的管理", link: "os/8/5/" },
       { text: "本章疑难点", link: "os/8/final/" },
     ],
