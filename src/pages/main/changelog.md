@@ -5,6 +5,10 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--11.13更新：
+
++ [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[第六章的主体内容](https://docs.drshw.tech/os/6/1/)和[8.1](https://docs.drshw.tech/os/8/1/)。
+
 --11.12更新：
 
 + [操作系统篇](https://docs.drshw.tech/os/introduction/)更新了[6.1~6.5](https://docs.drshw.tech/os/6/1/)。
