@@ -233,7 +233,7 @@ export const SIDEBAR: Sidebar = {
       { text: "7.6 文件保护", link: "os/7/6/" },
       { text: "本章疑难点", link: "os/7/final/" },
     ],
-    "第八章 磁盘存储器的管理": [
+    "第八章 磁盘管理": [
       { text: "8.1 外存的组织方式", link: "os/8/1/" },
       { text: "8.2 文件存储空间的管理", link: "os/8/2/" },
       { text: "8.3 磁盘结构与磁盘调度算法", link: "os/8/3/" },
