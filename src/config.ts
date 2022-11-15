@@ -57,6 +57,7 @@ export const SIDEBAR: Sidebar = {
     使用指南: [
       { text: "欢迎光临DrSHW的书架!", link: "main/introduction/" },
       { text: "动态", link: "main/changelog/" },
+      { text: "贡献文章/勘误指南", link: "main/debug_guidance/" },
       { text: "隐私政策", link: "main/policy/" },
     ],
     一些小项目: [
