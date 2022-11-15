@@ -1,6 +1,6 @@
 ---
 description: Docs intro
-layout: ../../../layouts/MainLayout.astro
+layout: ../../layouts/MainLayout.astro
 ---
 
 ### 贡献文章/勘误指南
