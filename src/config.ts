@@ -151,9 +151,13 @@ export const SIDEBAR: Sidebar = {
       { text: "Django 模型", link: "sf/1/3/" },
       { text: "Django 视图", link: "sf/1/4/" },
     ],
-    "项目一 麦趣商城": [
+    进阶篇: [
       { text: "说在前面", link: "sf/2/1/" },
-    ]
+      { text: "内置用户模型类、接口规范与跨域", link: "sf/2/2/" },
+    ],
+    番外篇: [
+      { text: "同源策略、跨域解决方案", link: "sf/extra_1/" },
+    ],
   },
   ps: {
     Python数据分析: [
