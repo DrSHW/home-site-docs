@@ -154,6 +154,7 @@ export const SIDEBAR: Sidebar = {
     进阶篇: [
       { text: "说在前面", link: "sf/2/1/" },
       { text: "内置用户模型类、接口规范与跨域", link: "sf/2/2/" },
+      { text: "各种验证码的实现", link: "sf/2/3/" },
     ],
     番外篇: [
       { text: "同源策略、跨域解决方案", link: "sf/extra_1/" },
