@@ -7,7 +7,11 @@ layout: ../../layouts/MainLayout.astro
 
 --12.3更新：
 
-+ 
++ 更新了[Python服务框架](https://docs.drshw.tech/sf/introduction/)中的一些文章：
+  + [内置用户模型类、接口规范与跨域](https://docs.drshw.tech/sf/2/2/)；
+  + [各种验证码的实现](https://docs.drshw.tech/sf/2/3/)；
+  + [同源策略、跨域解决方案](https://docs.drshw.tech/sf/extra_1/)；
+  + [通过CSRF中间件验证](https://docs.drshw.tech/sf/extra_1/)。
 
 --11.14更新：
 

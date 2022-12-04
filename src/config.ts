@@ -158,6 +158,7 @@ export const SIDEBAR: Sidebar = {
     ],
     番外篇: [
       { text: "同源策略、跨域解决方案", link: "sf/extra_1/" },
+      { text: "通过CSRF中间件验证", link: "sf/extra_2/" },
     ],
   },
   ps: {
