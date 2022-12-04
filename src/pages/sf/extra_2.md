@@ -13,7 +13,7 @@ layout: ../../layouts/MainLayout.astro
 
 处理好跨域后，前端需要先向后端请求`token`的值，流程如下：
 
-<img src="C:/Users/17100/AppData/Roaming/Typora/typora-user-images/image-20221204214005833.png" alt="image-20221204214005833" style="zoom: 50%;" />
+<img src="https://images.drshw.tech/images/notes/image-20221204214005833.png" alt="image-20221204214005833" style="zoom: 50%;" />
 
 其中，后端的`get_token()`函数在`django.middleware.csrf`包中；响应数据即为`csrf token`，且响应头中会包括`Set-Cookie`字段，在将在前端设置Cookie凭证信息。
 
