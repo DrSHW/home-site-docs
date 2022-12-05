@@ -12,7 +12,7 @@ layout: ../../layouts/MainLayout.astro
   + [各种验证码的实现](https://docs.drshw.tech/sf/2/3/)；
   + [同源策略、跨域解决方案](https://docs.drshw.tech/sf/extra_1/)；
   + [通过CSRF中间件验证](https://docs.drshw.tech/sf/extra_1/)。
-+ 更新了操作系统篇的课后习题，感谢不愿透露姓名的孙鹤做出的贡献！
++ 更新了操作系统篇的课后习题，感谢不愿透露姓名的孙鹤同学做出的贡献！
 
 --11.14更新：
 
