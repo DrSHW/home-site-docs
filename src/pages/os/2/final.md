@@ -78,34 +78,36 @@ cobegin
 
 ```cpp
 // 信号量设置
-semaphore mutex=1;  //互斥使用取号机
-semaphore empty=10; //空座位的数量，设置为10
-semaphore full=0;   //已占座位的数量，初值为0
-semaphore service=0;    //等待叫号，初始状态下银行一定是做好准备的，故设为1
+semaphore mutex=1;  // 互斥使用取号机
+semaphore empty=10; // 空座位的数量，设置为10
+semaphore full=0;   // 已占座位的数量，初值为0
+semaphore service=1;    // 等待叫号，初始状态下银行一定是做好准备的，故设为1
 // 进程操作
 cobegin 
 {
     process 顾客i
     {
-        P(empty);   //等空位
-        P(mutex);   //申请使用取号机
+        P(empty);   // 等空位
+        P(mutex);   // 申请使用取号机
         从取号机获取一个号码；
-        V(mutex);   //取号完毕
-        P(sevice);  //等待营业员叫号
-        V(full);    //通知营业员有新顾客
+        V(mutex);   // 取号完毕
+        P(sevice);  // 等待营业员叫号
+        V(full);    // 通知营业员有新顾客
     }
     process 营业员{
         while(true)
         {
-            P(full);    //没有顾客则休息
+            P(full);    // 没有顾客则休息
             叫号；
-            V(empty);   //顾客离开座位，释放一个空位
+            V(empty);   // 顾客离开座位，释放一个空位
             提供服务;
-            V(service); //服务
+            V(service); // 服务
         }
     }
  }coend
 ```
+
+可视化Python源码地址：[地址](https://github.com/DrSHW/OS-experiments/blob/main/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1%E2%80%94%E2%80%94PV%E6%93%8D%E4%BD%9C%E5%AE%9E%E7%8E%B0%E9%93%B6%E8%A1%8C%E6%9C%8D%E5%8A%A1%E9%97%AE%E9%A2%98.py)。
 
 ### 课后习题
 
