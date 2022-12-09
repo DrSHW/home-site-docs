@@ -5,6 +5,12 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--12.9更新：
+
++ [Python机器学习篇](https://docs.drshw.tech/os/introduction/)添加了计算机视觉栏目，记录了计算机视觉课的笔记；
+  + [计算机视觉概述](https://docs.drshw.tech/ps/cv/1/)；
+  + [深度学习与神经网络](https://docs.drshw.tech/ps/cv/2/)（更新中）；
+
 --12.3更新：
 
 + 更新了[Python服务框架](https://docs.drshw.tech/sf/introduction/)中的一些文章：

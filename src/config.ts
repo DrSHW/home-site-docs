@@ -41,6 +41,8 @@ export const GITHUB_EDIT_URL = `https://github.com/DrSHW/home-site-docs/tree/mas
 
 export const COMMUNITY_INVITE_URL = `https://github.com/maiqu-magicians`;
 
+export const LICENCE_URL = `https://docs.drshw.tech/main/policy/`;
+
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
   indexName: "drshw",
