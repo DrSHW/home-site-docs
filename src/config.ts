@@ -177,7 +177,13 @@ export const SIDEBAR: Sidebar = {
         link: "ps/machine_learning/01",
       },
     ],
-    计算机视觉入门: [],
+    计算机视觉入门: [
+      { text: "计算机视觉概述", link: "ps/cv/1/" },
+      {
+        text: "深度学习与神经网络",
+        link: "ps/cv/2/",
+      },
+    ],
   },
   os: {
     "第一章 操作系统引论": [
