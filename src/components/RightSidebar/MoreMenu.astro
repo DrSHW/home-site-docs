@@ -45,6 +45,33 @@ const showMoreSection = CONFIG.COMMUNITY_INVITE_URL;
     )
   }
   {
+    licenceHref && (
+      <li class={`heading-link depth-2`}>
+        <a class="edit-on-github" href={licenceHref} target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 24 24"
+            height="1.5em"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M15 21H6a3 3 0 0 1-3-3v-1h10v2a2 2 0 0 0 4 0V5a2 2 0 1 1 2 2h-2m2-4H8a3 3 0 0 0-3 3v11" />
+              <path d="M9 7h4" />
+              <path d="M9 11h4" />
+            </g>
+          </svg>
+          <span>隐私政策</span>
+        </a>
+      </li>
+    )
+  }
+  {
     CONFIG.COMMUNITY_INVITE_URL && (
       <li class={`heading-link depth-2`}>
         <a
@@ -70,33 +97,6 @@ const showMoreSection = CONFIG.COMMUNITY_INVITE_URL;
             />
           </svg>
           <span style="margin-left: 0.25rem;">加入麦趣魔法师协会</span>
-        </a>
-      </li>
-    )
-  }
-  {
-    licenceHref && (
-      <li class={`heading-link depth-2`}>
-        <a class="edit-on-github" href={licenceHref} target="_blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 24 24"
-            height="1.5em"
-          >
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M15 21H6a3 3 0 0 1-3-3v-1h10v2a2 2 0 0 0 4 0V5a2 2 0 1 1 2 2h-2m2-4H8a3 3 0 0 0-3 3v11" />
-              <path d="M9 7h4" />
-              <path d="M9 11h4" />
-            </g>
-          </svg>
-          <span>隐私政策</span>
         </a>
       </li>
     )
