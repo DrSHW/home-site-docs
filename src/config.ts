@@ -185,6 +185,10 @@ export const SIDEBAR: Sidebar = {
         text: "深度学习与神经网络",
         link: "ps/cv/2/",
       },
+      {
+        text: "Open-CV图像处理指南",
+        link: "ps/cv/3/",
+      },
     ],
   },
   os: {
