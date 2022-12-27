@@ -25,7 +25,7 @@ Lemon 是一个简化的可自举的C语言词法、语法分析器，借鉴了�
 
    将其转换为AST，形态如下：
 
-   <img src="https://images.maiquer.tech/images/wx/pic1.png" alt="image-20220828181532096" style="zoom: 33%;" />
+   <img src="https://images.drshw.tech/images/notes/image-20221228003228566.png" alt="image-20221228003228566" style="zoom:50%;" />
    
    我们也可以写出它的逆波兰表达式：`/(+(*34)15)3`，这个也很常用。
 
