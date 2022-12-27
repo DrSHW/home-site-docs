@@ -5,6 +5,11 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--12.28更新：
+
++ 更新了Lemon Compiler语法分析内容；
++ 新篇章，前端小记。
+
 --12.11更新：
 
 + 更新了[Python机器学习篇](https://docs.drshw.tech/os/introduction/)中[Open-CV图像处理指南](https://docs.drshw.tech/ps/cv/3/)一节更新完毕；

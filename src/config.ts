@@ -33,7 +33,7 @@ export const KNOWN_LANGUAGES = {
   Python服务框架: "sf",
   Python科学计算: "ps",
   操作系统: "os",
-  编译原理: "cp",
+  前端小记: "cp",
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
@@ -263,46 +263,8 @@ export const SIDEBAR: Sidebar = {
     ],
   },
   cp: {
-    "第一章 引论": [
-      { text: "1.1编译器的逻辑结构", link: "cp/1/1/" },
-      { text: "1.2编译程序的任务", link: "cp/1/2/" },
-      { text: "1.3程序设计语言基础", link: "cp/1/3/" },
+    "浏览器篇": [
+      { text: "浏览器和前端，从哪里来？", link: "cp/introduction/" },
     ],
-    "第二章 文法及语言": [
-      { text: "2.1程序语言的定义", link: "cp/2/1/" },
-      { text: "2.2高级语言的一般特性", link: "cp/2/2/" },
-      { text: "2.3程序语言的语法描述", link: "cp/2/3/" },
-    ],
-    "第三章 词法分析": [
-      { text: "3.1词法分析器的功能", link: "cp/3/1/" },
-      { text: "3.2词法分析器的设计", link: "cp/3/2/" },
-      { text: "3.3正规表达式与有限自动机", link: "cp/3/3/" },
-    ],
-    "第四章 语法分析": [
-      { text: "4.1自上而下分析面临的问题", link: "cp/4/1/" },
-      { text: "4.2预测分析 LL(1)方法", link: "cp/4/2/" },
-      { text: "4.3LR 分析法", link: "cp/4/3/" },
-      { text: "4.4自动产生工具 Yacc", link: "cp/4/4/" },
-    ],
-    "第五章 语法制导翻译": [
-      { text: "5.1属性文法", link: "cp/5/1/" },
-      { text: "5.2语法制导翻译", link: "cp/5/2/" },
-      { text: "5.3语义分析", link: "cp/5/3/" },
-    ],
-    "第六章 中间代码生成": [
-      { text: "6.1中间代码", link: "cp/6/1/" },
-      { text: "6.2赋值语句的翻译", link: "cp/6/2/" },
-      { text: "6.3控制语言的翻译", link: "cp/6/3/" },
-    ],
-    "第七章 运行环境": [
-      { text: "7.1存储分配", link: "cp/7/1/" },
-      { text: "7.2运行时栈", link: "cp/7/2/" },
-      { text: "7.3垃圾回收", link: "cp/7/3/" },
-    ],
-    "第八章 代码优化": [
-      { text: "8.1什么是优化", link: "cp/8/1/" },
-      { text: "8.2局部优化", link: "cp/8/2/" },
-      { text: "8.3循环优化", link: "cp/8/3/" },
-    ]
   },
 };
