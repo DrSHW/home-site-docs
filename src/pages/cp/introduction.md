@@ -107,4 +107,4 @@ Netscape 公司很快发现，浏览器需要一种可以嵌入网页的脚本�
 
 现在的JavaScript，已经是一门较为成熟且灵活的语言，且根据**运行环境**，会以对象的形式注入不同的API以供调用。例如在浏览器中运行时，可以操作DOM、BOM对象，而在Node.js环境中，可以作为服务端操作文件与请求等。
 
-我们也常常听说ES6（ECMAScript）等名词，它其实只是用于标准化JavaScript的基本词法、语法结构（lexical）的一个标准，是由W3C（World Wide Web Consortium）组织制定的。
+我们也常常听说ES6（ECMAScript）等名词，它其实只是用于规范JavaScript的基本词法、语法结构（lexical）的一个标准，是由W3C（World Wide Web Consortium）组织制定的。
