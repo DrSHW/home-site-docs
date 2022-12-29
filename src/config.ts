@@ -265,7 +265,8 @@ export const SIDEBAR: Sidebar = {
   cp: {
     "浏览器篇": [
       { text: "浏览器和前端，从哪里来？", link: "cp/1/1/" }, 
-      { text: "浏览器架构与事件循环", link: "cp/1/2/" },
+      { text: "浏览器架构与事件循环", link: "cp/1/2/" }, 
+      { text: "渲染引擎的执行原理", link: "cp/1/3/" },
     ],
   },
 };
