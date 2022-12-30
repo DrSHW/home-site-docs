@@ -5,12 +5,16 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--12.29更新：
+
++ 更新了浏览器篇3——[渲染引擎的执行原理](https://docs.drshw.tech/fe/1/3/)；
+
 --12.28更新：
 
 + 更新了Lemon Compiler语法分析内容；
 + 新篇章，前端小记；
-+ 浏览器篇1——[浏览器和前端，从哪里来？](https://docs.drshw.tech/cp/introduction/)；
-+ 浏览器篇2——[浏览器架构与事件循环](https://docs.drshw.tech/cp/1/2)。
++ 浏览器篇1——[浏览器和前端，从哪里来？](https://docs.drshw.tech/fe/introduction/)；
++ 浏览器篇2——[浏览器架构与事件循环](https://docs.drshw.tech/fe/1/2/)。
 
 --12.11更新：
 
