@@ -1,7 +1,6 @@
 ---
 description: Docs intro
-layout: ../../../layouts/MainLayout.astro
-
+layout: ../../layouts/MainLayout.astro
 ---
 
 ## 1.1 操作系统的概念，功能和目标
