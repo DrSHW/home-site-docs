@@ -3,7 +3,7 @@ description: Docs intro
 layout: ../../layouts/MainLayout.astro
 ---
 
-## 排序算法
+## 8.2 内部排序算法及性能对比
 
 排序，即将一系列杂乱排布的元素，按照一定的优先级（可以是大小、偏移量），变成有序序列的过程。
 

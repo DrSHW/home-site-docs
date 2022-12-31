@@ -5,6 +5,12 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--12.31更新：
+
++ 同步了计算机网络](https://docs.drshw.tech/cn/introduction/)前三章的笔记；
++ 更新了数据结构篇[8.2 内部排序算法及性能对比](https://docs.drshw.tech/ds/8/2/)；
++ **祝各位读者访客新年快乐！**
+
 --12.30更新：
 
 + 同步了之前的一些有关[计算机网络](https://docs.drshw.tech/cn/introduction/)的一些笔记，到第三章，暂未同步完毕；
