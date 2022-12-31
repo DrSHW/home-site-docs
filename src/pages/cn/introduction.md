@@ -1,6 +1,6 @@
 ---
 description: 计算机网络
-layout: ../../../layouts/MainLayout.astro
+layout: ../../layouts/MainLayout.astro
 ---
 
 ## 1.1 计算机网络概述

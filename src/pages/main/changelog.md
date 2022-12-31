@@ -5,6 +5,10 @@ layout: ../../layouts/MainLayout.astro
 
 ### 更新日志
 
+--12.30更新：
+
++ 同步了之前的一些有关[计算机网络](https://docs.drshw.tech/cn/introduction/)的一些笔记，到第三章，暂未同步完毕；
+
 --12.29更新：
 
 + 更新了浏览器篇3——[渲染引擎的执行原理](https://docs.drshw.tech/fe/1/3/)；
