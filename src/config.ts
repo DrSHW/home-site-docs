@@ -37,7 +37,7 @@ export const KNOWN_LANGUAGES = {
   Python网络编程: "pw",
   Python服务框架: "sf",
   Python科学计算: "ps",
-  
+
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
@@ -406,8 +406,8 @@ export const SIDEBAR: Sidebar = {
   },
   fe: {
     "浏览器篇": [
-      { text: "浏览器和前端，从哪里来？", link: "fe/1/1/" }, 
-      { text: "浏览器架构与事件循环", link: "fe/1/2/" }, 
+      { text: "浏览器和前端，从哪里来？", link: "fe/1/1/" },
+      { text: "浏览器架构与事件循环", link: "fe/1/2/" },
       { text: "渲染引擎的执行原理", link: "fe/1/3/" },
     ],
   },
